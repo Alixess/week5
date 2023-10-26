@@ -24,12 +24,21 @@ body {
   background-color: blanchedalmond;
 }
 
+.first {
+  display: flex;
+  justify-content: center;
+}
+
 article {
-  display: inline-block;
   margin: 15px;
   padding: 20px;
-  width: initial;
   background-color: coral;
+}
+
+.second article {
+  display: flex;
+  justify-content: center;
+  width: calc((100% / 2) - 40px);
 }
 
 .second {
@@ -39,21 +48,22 @@ article {
 
 .third {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 aside {
   display: flex;
-  width: 30vw;
   justify-content: center;
+  width: 30vw;
+  padding-top: 15px;
   background-color: lightgreen;
 }
 
 footer {
   display: flex;
+  justify-content: space-between;
   width: 100vw;
   height: auto;
-  justify-content: space-between;
   background-color: grey;
 }
 section {
